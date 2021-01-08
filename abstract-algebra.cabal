@@ -18,12 +18,23 @@ category:            Math
 extra-source-files:  CHANGELOG.md
 
 library
-  exposed-modules:     MyLib
+  exposed-modules:     Algebra.Magma,
+                       Algebra.Semigroup,
+                       Algebra.Quasigroup,
+                       Algebra.Unital,
+                       Algebra.Monoid,
+                       Algebra.Loop,
+                       Algebra.Group
   -- other-modules:
   -- other-extensions:
   build-depends:       base >=4.13.0.0
   hs-source-dirs:      src
   default-language:    Haskell2010
+  ghc-options:         -Wall
+  default-extensions:  NoImplicitPrelude,
+                       FlexibleInstances,
+                       UndecidableInstances,
+                       MonoLocalBinds
 
 test-suite abstract-algebra-test
   default-language:    Haskell2010
