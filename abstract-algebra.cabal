@@ -27,7 +27,7 @@ library
                        Algebra.Group,
                        Algebra.Homomorphism
 
-  -- other-modules:
+  other-modules:       Algebra.Prelude
   -- other-extensions:
   build-depends:       base >=4.13.0.0
   hs-source-dirs:      src
