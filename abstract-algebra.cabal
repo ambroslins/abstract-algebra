@@ -24,7 +24,9 @@ library
                        Algebra.Unital,
                        Algebra.Monoid,
                        Algebra.Loop,
-                       Algebra.Group
+                       Algebra.Group,
+                       Algebra.Homomorphism
+
   -- other-modules:
   -- other-extensions:
   build-depends:       base >=4.13.0.0
@@ -34,7 +36,8 @@ library
   default-extensions:  NoImplicitPrelude,
                        FlexibleInstances,
                        UndecidableInstances,
-                       MonoLocalBinds
+                       MonoLocalBinds,
+                       MultiParamTypeClasses
 
 test-suite abstract-algebra-test
   default-language:    Haskell2010
