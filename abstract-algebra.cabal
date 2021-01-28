@@ -35,6 +35,7 @@ library
   ghc-options:         -Wall
   default-extensions:  NoImplicitPrelude,
                        FlexibleInstances,
+                       FlexibleContexts,
                        UndecidableInstances,
                        MonoLocalBinds,
                        MultiParamTypeClasses
